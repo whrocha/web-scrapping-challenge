@@ -51,7 +51,7 @@ Finally, a REST API will be built such that it uses the defined storage and allo
 
 ## My Achievements
 
-I build the crawler using [Scrapy]('https://docs.scrapy.org/en/latest/index.html'), this crawler can be access in [meli_challenge](./meli_challenge/meli_challenge/spiders/extract_links.pyallenge)
+I build the crawler using [Scrapy]('https://docs.scrapy.org/en/latest/index.html'), this crawler can be access in [meli_challenge/meli_challenge/spiders/extract_links.py](./meli_challenge/meli_challenge/spiders/extract_links.py)
 
 I build the transformation using Scrapy Item Pipelines, more details can be access [here]('https://docs.scrapy.org/en/latest/topics/item-pipeline.html').
 
