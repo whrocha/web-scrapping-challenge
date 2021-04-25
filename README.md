@@ -53,15 +53,15 @@ Finally, a REST API will be built such that it uses the defined storage and allo
 
 I build the crawler using [Scrapy]('https://docs.scrapy.org/en/latest/index.html'), this crawler can be access in [meli_challenge/meli_challenge/spiders/extract_links.py](./meli_challenge/meli_challenge/spiders/extract_links.py)
 
-I build the transformation using Scrapy Item Pipelines, more details can be access [here]('https://docs.scrapy.org/en/latest/topics/item-pipeline.html').
+The data transformation I build using Scrapy Item Pipelines, more details can be access in 'https://docs.scrapy.org/en/latest/topics/item-pipeline.html'.
 
-Scrapy Item Pipeline source code can be access at [meli_challenge/pipelines.py](./meli_challenge/meli_challenge/pipelines.py).
+Scrapy Item Pipeline source code can be access in [meli_challenge/pipelines.py](./meli_challenge/meli_challenge/pipelines.py).
 
-Item Pipeline will analyse all the scrapped links and count the appearences.
+Item Pipeline will analyse all the scrapped data and will count the appearences.
 
-I don't build the REST API yet, but I created a Jupyter Notebook to created Vectors.
+I don't built the REST API yet, but I created a Jupyter Notebook to analyse extracted links and to create Vectors.
 
-The Jupyter Notebook can be access at [vector-analytics.ipynb](./vector-analytics.ipynb).
+Jupyter Notebook can be access in [vector-analytics.ipynb](./vector-analytics.ipynb).
 
 ### TO-DO List
 
