@@ -135,7 +135,7 @@ Check items file in [meli_challenge/items.jl](./meli_challenge/items.jl)
 
 **Checking Results**
 
-Go to [Jupyter Notebook]('./vector-analytics.ipynb') to see the Results.
+Go to [Jupyter Notebook](./vector-analytics.ipynb) to see the Results.
 
 ### TO-DO List
 
