@@ -131,7 +131,7 @@ The final output should be
 2021-04-25 02:13:07 [scrapy.core.engine] INFO: Spider closed (finished)
 ```
 
-Check items file in [meli_challenge/items.jl]('./meli_challenge/items.jl')
+Check items file in [meli_challenge/items.jl](./meli_challenge/items.jl)  
 
 **Checking Results**
 
