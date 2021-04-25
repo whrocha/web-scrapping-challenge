@@ -63,6 +63,80 @@ I don't built the REST API yet, but I created a Jupyter Notebook to analyse extr
 
 Jupyter Notebook can be access in [vector-analytics.ipynb](./vector-analytics.ipynb).
 
+### Run locally
+
+To run this project locally.
+
+**Create virtual environment**
+
+```
+virtualenv -p python3.8 venv
+```
+
+**Active Virtual Environment**
+
+```
+source venv/bin/activate
+```
+
+**Install necessary libs**
+
+```
+pip install -r requirements.txt
+```
+
+**Run Scrapy crawler**
+
+Go to meli_challenge directory
+
+```
+cd meli_challenge/
+```
+
+Now run the crawler
+
+```
+scrapy crawl LinkCrawler -L INFO
+```
+
+The final output should be
+
+```
+{'downloader/request_bytes': 19931,
+ 'downloader/request_count': 73,
+ 'downloader/request_method_count/GET': 73,
+ 'downloader/response_bytes': 739930,
+ 'downloader/response_count': 73,
+ 'downloader/response_status_count/200': 51,
+ 'downloader/response_status_count/301': 8,
+ 'downloader/response_status_count/302': 12,
+ 'downloader/response_status_count/403': 2,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 75.676707,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 4, 25, 5, 13, 7, 245775),
+ 'httpcompression/response_bytes': 6332836,
+ 'httpcompression/response_count': 52,
+ 'item_scraped_count': 50,
+ 'log_count/INFO': 11,
+ 'memusage/max': 309370880,
+ 'memusage/startup': 61227008,
+ 'request_depth_max': 2,
+ 'response_received_count': 53,
+ 'scheduler/dequeued': 73,
+ 'scheduler/dequeued/memory': 73,
+ 'scheduler/enqueued': 73,
+ 'scheduler/enqueued/memory': 73,
+ 'start_time': datetime.datetime(2021, 4, 25, 5, 11, 51, 569068)}
+2021-04-25 02:13:07 [scrapy.core.engine] INFO: Spider closed (finished)
+```
+
+Check items file in [meli_challenge/items.jl]('./meli_challenge/items.jl')
+
+**Checking Results**
+
+Go to [Jupyter Notebook]('./vector-analytics.ipynb') to see the Results.
+
 ### TO-DO List
 
 - Build the challenge REST API.
